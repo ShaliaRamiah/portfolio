@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalia Ramiah | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ec4415b85.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--  header  -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Shalia Ramiah Logo">
+                <ul id="nav-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="header-text">
+            <p>I am a <span class="typewriter"></span></p>
+            <br>
+            <h1>Welcome.<br>I am Shalia, a <span>Software Developer Intern</span> from Cape Town</h1>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+
+    <!--  about  -->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.jpeg" alt="Shalia Ramiah">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titles">About Me</h1>
+                <p>I'm a Java Developer with experience building REST APIs using Spring Boot and working on projects in
+                    the financial services sector. I enjoy solving problems through code and building efficient backend
+                    systems while continuing to grow my skills as a developer.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java &amp; Spring Boot</span><br>Building backend applications and REST APIs</li>
+                        <li><span>Web Development</span><br>Developing websites</li>
+                        <li><span>SQL / Database Management</span><br>Designing and querying</li>
+                        <li><span>Cloud (AWS)</span><br>Working with <strong>EC2</strong>, <strong>CloudWatch</strong>, and <strong>Lambda</strong> for deployment, monitoring, and serverless computing</li>
+                        <li><span>Manual Testing</span><br>Verifying API endpoints, logins, and data integrity using Postman and SQL</li>
+                        <li><span>Automation Testing</span><br>JUnit (Backend) &amp; Selenium (Frontend)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Junior Java Developer at <strong>Reverside</strong></li>
+                        <li><span>2025 - 2026</span><br>Junior Java Developer at <strong>Rand Merchant Bank (RMB) </strong></li>
+                        <li><span>2023</span><br>Java Intern at <strong>Zensar Technologies</strong></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 – 2023</span><br>Bachelor of Computer and Information Sciences in Application Development</li>
+                        <li><span>2019</span><br>Graduated at Cedar House</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  services  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Development</h2>
+                    <p>Building scalable backend systems and REST APIs using Java and Spring Boot.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Developing responsive and functional websites using modern web technologies.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-flask"></i>
+                    <h2>Testing</h2>
+                    <p>Testing API endpoints, authentication flows, and data integrity using Postman and SQL queries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  portfolio  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/GUID ex.png" alt="GUID Extension project screenshot">
+                    <div class="layer">
+                        <h3>GUID Extension</h3>
+                        <p>A Visual Studio Code extension for quickly generating and inserting GUIDs directly into your code.<br><br>
+
+                        </p>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ShaliaRamiah.guid-generator" target="_blank" rel="noopener" aria-label="View on VS Marketplace">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/WeatherApp.png" alt="Angular Weather App screenshot">
+                    <div class="layer">
+                        <h3>Angular Weather App</h3>
+                        <p>A responsive Angular app that displays real-time weather data by city in a clean interface.<br><br>
+                        </p>
+                        <a href="https://github.com/ShaliaRamiah/angular-weather-app" target="_blank" rel="noopener" aria-label="View on GitHub">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Dewey.png" alt="Dewey Decimal Classification App screenshot">
+                    <div class="layer">
+                        <h3>Dewey Decimal Classification App</h3>
+                        <p>A C# WinForms app that teaches library classification through interactive and gamified features.<br><br>
+                        </p>
+                        <a href="https://github.com/ShaliaRamiah/Dewey-Decimals" target="_blank" rel="noopener" aria-label="View on GitHub">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  contact  -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-titles">Get In Touch</h1>
+            <p class="contact-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>shalia.r20@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Cape Town, South Africa</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/shalia-ramiah" target="_blank" rel="noopener">Connect with me</a>
+                    </div>
+                </div>
+
+                <form id="contact-form" action="https://formspree.io/f/mjgadvar" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        <span class="field-error" id="name-error">Please enter your name.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <span class="field-error" id="email-error">Please enter a valid email address.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or just say hi..." required></textarea>
+                        <span class="field-error" id="message-error">Please write a message.</span>
+                    </div>
+                    <button type="submit" class="btn-submit" id="submit-btn">
+                        <span id="btn-text">Send Message</span>
+                        <i class="fa-solid fa-paper-plane" id="btn-icon"></i>
+                    </button>
+                    <!-- feedback messages shown after submission -->
+                    <div class="form-message success" id="form-success">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Thanks for reaching out! I'll get back to you soon.
+                    </div>
+                    <div class="form-message error" id="form-error">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Something went wrong. Please try again or email me directly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--  footer  -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Shalia Ramiah" class="footer-logo">
+                <p>Making things work, one step at a time.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Find Me On</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/ShaliaRamiah" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/shalia-ramiah" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:shalia.r20@gmail.com" aria-label="Send Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Shalia Ramiah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
