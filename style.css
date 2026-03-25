@@ -1067,7 +1067,36 @@ nav ul li a:hover::after, nav ul li a:focus::after { width: 100%; }
 }
 
 /*
-   responsive design - tablet (max-width: 900px)
+   half screen
+    */
+@media (max-width: 1180px) {
+  .services-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .services-list,
+  .services-cluster {
+    min-width: 0;
+  }
+
+  .service-card {
+    gap: 28px;
+    padding: 34px 0;
+  }
+
+  .services-cluster {
+    min-height: 390px;
+  }
+
+  .services-cluster-network {
+    transform: scale(0.84);
+    transform-origin: center;
+  }
+}
+
+/*
+   tablet
     */
 @media (max-width: 900px) {
   .hamburger { display: flex; }
@@ -1166,28 +1195,92 @@ nav ul li a:hover::after, nav ul li a:focus::after { width: 100%; }
 }
 
 /*
-   responsive design - mobile (max-width: 600px)
+   mobile
     */
 @media (max-width: 600px) {
+  #about,
+  #services,
+  #portfolio,
+  #contact,
+  #footer {
+    overflow-x: clip;
+  }
+
+  nav {
+    padding: 18px 6%;
+  }
+
+  #nav-menu {
+    top: 64px;
+    gap: 12px;
+    padding: 18px 6% 22px;
+  }
+
+  #nav-menu li a {
+    display: inline-block;
+    padding: 8px 0;
+  }
+
   .header-text {
     width: 95%;
     top: 54%;
   }
 
-  .header-text h1 { font-size: 32px; }
+  .header-text p, .typewriter, .typewriter::after { font-size: 12px; }
 
-  .hero-cta { margin-top: 28px; }
+  .header-text h1 {
+    font-size: clamp(28px, 8.5vw, 34px);
+    line-height: 1.2;
+  }
+
+  .hero-cta {
+    margin: 24px auto 0;
+    max-width: 280px;
+    flex-direction: column;
+    align-items: stretch;
+  }
 
   .sub-titles { font-size: 28px; }
 
   .btn-primary, .btn-secondary {
     padding: 11px 22px;
     font-size: 13px;
+    text-align: center;
+  }
+
+  .about-col-2 > p {
+    font-size: 14px;
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    min-width: 0;
+  }
+
+  .tab-titles {
+    gap: 12px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .tab-links {
+    font-size: 12px;
+    padding-bottom: 10px;
   }
 
   .service-card {
     grid-template-columns: 1fr;
     gap: 14px;
+    padding: 28px 0;
+  }
+
+  .service-body h2 { font-size: 20px; }
+
+  .service-body p {
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .services-layout {
@@ -1195,11 +1288,18 @@ nav ul li a:hover::after, nav ul li a:focus::after { width: 100%; }
   }
 
   .services-cluster {
-    min-height: 320px;
+    min-height: 300px;
+    overflow: hidden;
   }
 
   .services-cluster-network {
-    transform: scale(0.72);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 430px;
+    height: 430px;
+    margin: 0;
+    transform: translate(-50%, -50%) scale(0.62);
     transform-origin: center;
   }
 
@@ -1210,7 +1310,19 @@ nav ul li a:hover::after, nav ul li a:focus::after { width: 100%; }
 
   .work-list { grid-template-columns: 1fr; }
 
+  .work-info { padding: 20px; }
+
+  .work-info p { font-size: 13px; }
+
   .contact-info { flex-direction: column; }
 
-  .tab-titles { gap: 20px; }
+  .contact-card {
+    min-width: 0;
+    padding: 20px;
+  }
+
+  .form-group input, .form-group textarea {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
 }
